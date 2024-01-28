@@ -105,15 +105,21 @@ nav .fa-solid{
         display: block;
     }
     .nav-links{
+        display: none;
         position: absolute;
         background: #D7887F;
         height: 100vh;
         width: 200px;
         top: 0;
         right: -280px; /* hide the bar */
-        text-align: left;
         z-index: 2;
-        transition: 0.5s;
+        text-align: left;
+        transition: 1s;
+    }
+    .nav-links.show{
+        transition: 1s;
+        display: block;
+        right: 0;
     }
     nav .fa-solid{
         display: block;

@@ -47,12 +47,13 @@
 
     var navLinks = document.getElementById("navLinks");
     
+    // fix the small screen transition
     function showMenu() {
-      navLinks.style.right = "0";
+      navLinks.classList.add("show");
     }
 
     function hideMenu() {
-      navLinks.style.right = "-280px";
+      navLinks.classList.remove("show");
     }
 
   </script>
