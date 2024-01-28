@@ -1,73 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[Your Product Name] - The Future is Here</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <section class="hero">
-    <img src="hero-image.jpg" alt="[Product Name] Hero Image">
-    <div class="hero-content">
-      <h1>Experience the Future with [Your Product Name]</h1>
-      <p>Introducing a revolutionary product that will change the way you [describe main benefit].</p>
-      <a href="#features" class="button">Learn More</a>
-    </div>
-  </section>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> <!--making the website responsive-->
+      <title>echo.ai</title>
+      <link rel="stylesheet" href="style.css"> <!--linking css doc-->
+      <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google montserrat font-->
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/e170d92eca.js" crossorigin="anonymous"></script>
+    </head>
+  <body>
+    <section class="header">
+      <!-- navigation panel at the top -->
+      <nav>
+        <a href="index.html"><img src="images/logo_no_text.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-x" onclick="hideMenu()"></i> <!-- closes menu -->
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">FEATURES</a></li>
+            <li><a href="">PRICING</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!-- shows menu on click -->
+      </nav>
 
-  <section id="features" class="features">
-    <h2>Unleash the Power of [Your Product Name]</h2>
-    <div class="feature-cards">
-      <div class="card">
-        <img src="feature1.png" alt="Feature 1 Icon">
-        <h3>Feature 1: [Feature 1 Title]</h3>
-        <p>[Short description of Feature 1]</p>
-      </div>
-      <div class="card">
-        <img src="feature2.png" alt="Feature 2 Icon">
-        <h3>Feature 2: [Feature 2 Title]</h3>
-        <p>[Short description of Feature 2]</p>
-      </div>
-      <div class="card">
-        <img src="feature3.png" alt="Feature 3 Icon">
-        <h3>Feature 3: [Feature 3 Title]</h3>
-        <p>[Short description of Feature 3]</p>
-      </div>
-    </div>
-  </section>
+  <!-- title page text -->
+  <div class="text-box">
+    <h1>Introducing the Echopod...</h1>
+    <p>a voice-activated companion designed and developed with you in mind</p> <!-- fix line break when changing text -->
+    <a href="" class="hero-btn">Explore Product</a>
 
-  <section class="benefits">
-    <h2>Why Choose [Your Product Name]?</h2>
-    <ul>
-      <li>[Benefit 1]</li>
-      <li>[Benefit 2]</li>
-      <li>[Benefit 3]</li>
-      <li>[Benefit 4]</li>
-    </ul>
-    <a href="#gallery" class="button">See it in Action</a>
-  </section>
+  </div>
+    
 
-  <section id="gallery" class="gallery">
-    <h2>Gallery: Discover the Possibilities</h2>
-    <div class="gallery-grid">
-      <img src="image1.jpg" alt="[Image 1 Description]">
-      <img src="image2.jpg" alt="[Image 2 Description]">
-      <img src="image3.jpg" alt="[Image 3 Description]">
-      </div>
-  </section>
+    </section>
 
-  <section class="contact">
-    <h2>Ready to Experience the Future?</h2>
-    <p>Contact us today and learn more about how [Your Product Name] can transform your [target area].</p>
-    <a href="contact.html" class="button">Contact Us</a>
-  </section>
+    <!--------------- features ---------------------->
+    
 
-  <footer>
-    <p>&copy; [Your Company Name] 2024</p>
-    <a href="about.html">About Us</a>
-  </footer>
+    <!-- ------- JavaScript for Toggle Menu --------->
+  <script>
 
-  <script src="script.js"></script>
-</body>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+
+  </body>
 </html>
