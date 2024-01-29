@@ -22,7 +22,7 @@
 /* navigation bar at the top */
 nav{
     display: flex;
-    padding: 2% 2%; /* padding for the logo */
+    padding: 1% 2%; /* padding for the logo */
     justify-content: space-between;
     align-items: center;
 }
